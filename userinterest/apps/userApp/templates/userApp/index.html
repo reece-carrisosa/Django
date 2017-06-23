@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/users" method="POST">
+    {% csrf_token %}
+        <h2>Registration</h2>
+        Name:<br>
+        <input type="text" name="name"><br>
+        Interest:<br>
+        <input type="text" name="interest"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
